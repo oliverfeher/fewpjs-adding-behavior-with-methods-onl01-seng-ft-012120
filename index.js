@@ -17,7 +17,7 @@ class Dog {
     };
 
     speak() {
-        return (this.sex === "male" ? `It's me! ${this.name} the parrot!` : `${this.name} says woof!`);
+        return `${this.name} says woof!`
     }
 };
 
@@ -28,6 +28,6 @@ class Bird {
     };
 
     speak() {
-        return `${this.name} says squawk!`
+        return (this.sex === "male" ? `It's me! ${this.name}, the parrot!` : `${this.name} says squawk!`);
     }
 };
